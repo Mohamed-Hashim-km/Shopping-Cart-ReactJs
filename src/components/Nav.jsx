@@ -22,9 +22,11 @@ const Nav = () => {
 
   return (
     <>
-      <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 z-[999] sticky top-0">
+      <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 z-[999] shadow-sm shadow-black sticky top-0">
+       
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <div className="flex px-4 py-2 rounded-md border-2 border-black w-[90vh]  overflow-hidden max-w-md  font-[sans-serif]">
+        <Link to={"/"}><h1 className="text-3xl font-bold text-rose-900">Shopping Cart</h1></Link>
+          <div className="flex px-4 py-2 rounded-lg border-2 border-black w-[90vh]  overflow-hidden max-w-md  font-[sans-serif]">
             <input onChange={SearchHandler} placeholder="Search Products..." className="w-full outline-none bg-transparent text-wt text-sm" ref={searchValues} />
             <button>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.904 192.904" width="16px" className="fill-white text-white">

@@ -69,7 +69,7 @@ const HomePage = () => {
       ) : (
         <div>
           <select
-            className=" shadow-black shadow-sm bg-[#1d4ed8] font-extrabold font-mono text-center text-white drop-shadow-md border-[#f3f4f6] outline-none cursor-pointer px-2 py-1  rounded-md mb-3 ml-2  "
+            className=" shadow-black mt-3 shadow-sm bg-[#1d4ed8] font-extrabold font-mono text-center text-white drop-shadow-md border-[#f3f4f6] outline-none cursor-pointer px-2 py-1  rounded-md mb-3 ml-2  "
             onChange={(event) => setPriceFilterStatus(event.target.value)}
           >
             <option className="bg-white text-black" value="all value">
