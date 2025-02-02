@@ -7,7 +7,6 @@ import Filter from "./components/DropDown";
 import SearchProducts from "./components/SearchProducts";
 import Footer from "./components/Footer";
 import AddCart from "./components/AddCart";
-import { ToastContainer } from "react-toastify";
 
 function App() {
   return (

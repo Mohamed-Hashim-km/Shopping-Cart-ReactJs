@@ -8,8 +8,8 @@ import { store } from './store/store.jsx'
 import { ToastContainer } from 'react-toastify'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-      <ToastContainer />
     <BrowserRouter>
+    <ToastContainer />
     <Provider store={store}>
     <App />
     </Provider>

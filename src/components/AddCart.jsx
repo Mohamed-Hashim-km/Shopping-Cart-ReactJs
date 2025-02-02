@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 
 import { useDispatch, useSelector } from "react-redux";
 import { Delete, Increase, Decrease, RemoveAll } from "../store/addCartSlice";
+import { toast } from "react-toastify";
 
 const AddCart = () => {
   // const { cart, dispatchCart, isOpen, totalPrice, totalQuantity } = useContext(Cartconstext);
@@ -19,7 +20,7 @@ const AddCart = () => {
       {/* ============================Drawer Part=============================== */}
       <div>
         <div
-          className={`fixed w-[80vh] shadow-black shadow-lg duration-700 ease-in-out bg-transparent top-10 pt-10 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform ${
+          className={`fixed md:w-[80vh] w-[90%] shadow-black shadow-lg duration-700 ease-in-out bg-transparent top-[10%] md:top-14 pt-10 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform ${
             isOpen ? "translate-x-0" : "translate-x-full"
           } bg-white w-64 dark:bg-gray-800`}
           tabIndex="-1"
@@ -27,7 +28,7 @@ const AddCart = () => {
         >
           {cart.map((item, index) => {
             return (
-              <div className="max-w-2xl mx-auto " key={index}>
+              <div className="max-w-2xl  mx-auto " key={index}>
                 <div className="flex gap-3 bg-white border border-gray-300 rounded-xl overflow-hidden items-center justify-start">
                   <div className="relative w-32 h-32 flex-shrink-0">
                     <img className="absolute left-0 top-0 w-full h-full object-cover object-center transition duration-50" loading="lazy" src={item.images} />
@@ -106,8 +107,10 @@ const AddCart = () => {
                   <span className="font-semibold">Total</span>
                   <span className="font-semibold">${Math.round(totalPrice)}</span>
                 </div>
-                <button onClick={() => dispatchCart(RemoveAll())} className="bg-blue-500 text-white py-2 px-4 rounded-lg mt-4 w-full">
-                  REMOVE ALL
+                <button onClick={() => {dispatchCart(RemoveAll()),toast.success("Check out Success",{
+                  toastId: "checkOut",
+                })}} className="bg-blue-500 text-white py-2 px-4 rounded-lg mt-4 w-full">
+                  CHECK OUT
                 </button>
               </div>
             </div>

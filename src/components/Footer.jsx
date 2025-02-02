@@ -14,35 +14,35 @@ const Footer = () => {
           </div>
           <div className="p-5">
             <div className="text-sm uppercase text-indigo-600 font-bold">Resources</div>
-            <a className="my-3 block" href="/#">
+            <a className="my-3 block" >
               Documentation <span className="text-teal-600 text-xs p-1"></span>
             </a>
-            <a className="my-3 block" href="/#">
+            <a className="my-3 block" >
               Tutorials <span className="text-teal-600 text-xs p-1"></span>
             </a>
-            <a className="my-3 block" href="/#">
+            <a className="my-3 block" >
               Support <span className="text-teal-600 text-xs p-1">New</span>
             </a>
           </div>
           <div className="p-5">
             <div className="text-sm uppercase text-indigo-600 font-bold">Support</div>
-            <a className="my-3 block" href="/#">
+            <a className="my-3 block" >
               Help Center <span className="text-teal-600 text-xs p-1"></span>
             </a>
-            <a className="my-3 block" href="/#">
+            <a className="my-3 block" >
               Privacy Policy <span className="text-teal-600 text-xs p-1"></span>
             </a>
-            <a className="my-3 block" href="/#">
+            <a className="my-3 block" >
               Conditions <span className="text-teal-600 text-xs p-1"></span>
             </a>
           </div>
           <div className="p-5">
             <div className="text-sm uppercase text-indigo-600 font-bold">Contact us</div>
-            <a className="my-3 block" href="/#">
+            <a className="my-3 block" >
               Ecart Kakkanad, Floor 4 Padamughal, india
               <span className="text-teal-600 text-xs p-1"></span>
             </a>
-            <a className="my-3 block" href="/#">
+            <a className="my-3 block" >
               contact@ecart.com
               <span className="text-teal-600 text-xs p-1"></span>
             </a>
@@ -55,17 +55,17 @@ const Footer = () => {
       max-w-screen-lg items-center"
         >
           <div className="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
-            <a href="/#" className="w-6 mx-1"></a>
-            <a href="/#" className="w-6 mx-1">
+            <a  className="w-6 mx-1"></a>
+            <a  className="w-6 mx-1">
               <FaLinkedinIn />
             </a>
-            <a href="/#" className="w-6 mx-1">
+            <a  className="w-6 mx-1">
               <FaTwitter />
             </a>
-            <a href="/#" className="w-6 mx-1">
+            <a  className="w-6 mx-1">
               <FaWhatsapp />
             </a>
-            <a href="/#" className="w-6 mx-1">
+            <a  className="w-6 mx-1">
               <FaInstagram />
             </a>
           </div>
