@@ -7,10 +7,12 @@ import Filter from "./components/DropDown";
 import SearchProducts from "./components/SearchProducts";
 import Footer from "./components/Footer";
 import AddCart from "./components/AddCart";
+import ScrollTop from "./ScrollTop/ScrollTop";
 
 function App() {
   return (
     <>
+    <ScrollTop/>
       <Nav />
       <AddCart />
       <Routes>
